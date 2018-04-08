@@ -18,26 +18,9 @@
 #the exploit will run automatically(Without user interaction).
 
 import urllib
-import Tkinter as tk
-root = tk.Tk()
-
-root.overrideredirect(True)
-width = root.winfo_screenwidth()
-height = root.winfo_screenheight()
-root.geometry('%dx%d+%d+%d' % (width*0.8, height*0.8, width*0.1, height*0.1))
-
 
 image_file = "splash.gif"
-
-
-image = tk.PhotoImage(file=image_file)
-canvas = tk.Canvas(root, height=height*0.8, width=width*0.8, bg="black")
-canvas.create_image(width*0.8/2, height*0.8/2, image=image)
-canvas.pack()
-
-root.after(5000, root.destroy)
-root.mainloop()
-
+print("")
 print(" +----------------------------------------------------------------+")
 print(" |   ___ ___ ___ ____  __      _   _________________          |")
 print(" |  / __/ __| _ \        __________ _| |_____ _ _   |")
